@@ -1210,6 +1210,7 @@ pre code {
 }
 
 @media (min-width: 992px) {
+  
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
@@ -1855,6 +1856,9 @@ pre code {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+  #Home{
+    height: fit-content !important;
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
@@ -9894,6 +9898,19 @@ h6,
   background: linear-gradient(to bottom, transparent 50%, #F4F5F8 50%);
   min-height: 450px;
   border-radius: 30px !important;
+}
+.team-item1{
+  border-radius: 30px !important;
+}
+.team-item1 .img-fluid{
+  width: 100% !important;
+}
+#Home{
+  height: 630px; 
+  background-color: #26225c; 
+  background-image: url('../Assets/electrical.jpg'); 
+  background-size: cover;
+  transform: scaleX(-1);
 }
 
 .team-item:hover .team-overlay {
