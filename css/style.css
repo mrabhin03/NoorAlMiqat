@@ -1215,6 +1215,7 @@ pre code {
 @media (max-width: 770px) {
   #Home{
     height: 360px !important;
+    padding-top: 10px !important;
   }
   #TILTEDATA{
     font-size: 33px !important;
@@ -1229,6 +1230,7 @@ pre code {
   #ButtonL{
     font-size: 10px;
     margin-left: 0px !important;
+    margin-top: 0px !important;
   }
 }
 /* From Uiverse.io by JulanDeAlb */ 
@@ -9970,7 +9972,7 @@ h6,
   background-size: cover;
   transform: scaleX(-1);
   height: 600px;
-  padding-top: 30px !important;
+  padding-top: 20px !important;
 }
 
 
