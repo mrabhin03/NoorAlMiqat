@@ -73,6 +73,16 @@
             }
         }
     });
+    $(".AboutUSImage").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 30,
+        dots: false,
+        loop: true,
+        nav : false,
+        
+        items:1
+    });
 
 
     // Testimonials carousel
@@ -100,4 +110,14 @@
     });
     
 })(jQuery);
+
+
+function menudata(object){
+    newObject=object.parentNode;
+    if(newObject.classList.contains('collapsed')){
+        object.checked=false;
+    }else{
+        object.checked=true;
+    }
+}
 

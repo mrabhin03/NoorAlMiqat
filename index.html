@@ -24,19 +24,19 @@
         <div style="background-color: #1e1a51; padding-left: 0px;" class="container-fluid position-relative">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="" class="navbar-brand text-secondary">
-                    <img style="height: 50px; " src="Assets/Logo Side2 Tr.png" alt="" srcset="">
+                    <img class="Header-Images"  src="Assets/Logo Side2 Tr.png" alt="" srcset="">
                 </a>
                 <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button> -->
-                <label class="hamburger navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <input type="checkbox">
+                <label class="hamburger navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+                    <input onchange="menudata(this)" type="checkbox">
                     <svg viewBox="0 0 32 32">
                       <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
                       <path class="line" d="M7 16 27 16"></path>
                     </svg>
                   </label>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse " id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0 pr-3 border-right">
                         <a href="" class="nav-item nav-link active">Home</a>
                         <a href="#About" class="nav-item nav-link">About</a>
@@ -75,16 +75,28 @@
     <div id="About"  class="container-fluid py-5">
         
         <div class="container py-5">
-            <h1 class="" style=" margin-bottom: 0px; font-size: 2rem; color: #26225c; font-weight: 100;">About Us</h1>
-            <div class="row align-items-center">
+            <h1 class="aboutTitle" style="color: #26225c; font-weight: 0;">About Us</h1>
+            <div class="aboutSub">
                 <div class="col-lg-6">
-                    <img style="border-radius: 10px;" class="img-fluid2 mb-4 mb-lg-0" src="Assets/About.png" alt="">
+                    <div  class="owl-carousel AboutUSImage position-relative" style="padding-left: 0px;">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid2 w-100" src="Assets/electrical.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid2 w-100" src="Assets/Plumber.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <img style="border-radius: 10px;" class="img-fluid2 mb-4 mb-lg-0 aboutImage" src="Assets/About.png" alt="">
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="display-4 text-uppercase mb-4" style="color: #26225c;">Best MAINTENANCE TEAM in Dubai</h1>
-                    <h5 class="text-uppercase mb-3" style="color: black;">Premier Maintenance Solutions for Homes and Businesses in Dubai</h5>
+                    <h1 class="display-4 text-uppercase mb-4" style="color: #26225c;">Best MAINTENANCE TEAM in UAE</h1>
+                    <h5 class="text-uppercase mb-3" style="color: black;">Premier Maintenance Solutions for Homes and Businesses in UAE</h5>
                     <p class="mb-4">Welcome to <b>Noor Al Miqat</b>, 
-                        the leading maintenance agency in Dubai, where quality meets reliability. We specialize in providing comprehensive maintenance services designed to meet the unique needs of both residential and commercial spaces. Our mission is to ensure your environments are not only functional 
+                        the leading maintenance agency in UAE, where quality meets reliability. We specialize in providing comprehensive maintenance services designed to meet the unique needs of both residential and commercial spaces. Our mission is to ensure your environments are not only functional 
                         but also enhance the overall experience of your space.</p>
                     <a href="Assets/Noor Al Miqat.pdf" download="Noor Al Miqat.pdf" class="btn btn-dark text-uppercase py-3 px-5">Read More</a>
                 </div>
@@ -286,9 +298,8 @@
                 <h6 class="text-uppercase text-white py-2">Follow Us</h6>
                 <div class="d-flex justify-content-start">
                     <!-- <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
-                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square mr-2" target="_blank" href="https://www.facebook.com/profile.php?id=61568270352745&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square" target="_blank" href="https://www.instagram.com/nooralmiqat/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -296,7 +307,7 @@
                 <!-- <p>You can contact us on </p> -->
                 <p><i class="fa fa-map-marker-alt text-white mr-2"></i>
                     United Arab Emirates <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Dubai, Ajman 
+                    UAE, Ajman 
                 </p>
                 <p><i class="fa fa-phone-alt text-white mr-2"></i>
                     +971 50 376 9648<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -325,6 +336,7 @@
     
 
     <a href="" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-up"></i></a>
+    <a href="https://wa.me/+971543450744?text=hi" target="_blank" class="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
 
  

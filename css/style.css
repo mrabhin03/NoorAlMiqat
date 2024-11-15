@@ -41,6 +41,22 @@
 *::after {
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: .1rem;
+  background: #26225c;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbdbdb;
+}
 
 html {
   font-family: sans-serif;
@@ -535,7 +551,7 @@ mark,
   /* box-shadow: 2px 2px 2px black; */
 }
 .img-fluid2 {
-  width: 100%;
+  width: 98%;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -670,11 +686,46 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
 }
+.col-lg-6{
+  padding-left:  0 !important;
+}
 
 .col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
+}
+.aboutSub{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+}
+.aboutTitle{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.AboutUSImage{
+  display: none !important;
+}
+.aboutImage{
+  display: grid;
+}
+@media (max-width:992px) {
+  .aboutTitle{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .aboutSub{
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .AboutUSImage{
+    display: grid !important;
+  }
+  .aboutImage{
+    display: none !important;
+  }
 }
 
 .row-cols-1 > * {
@@ -1213,6 +1264,9 @@ pre code {
   max-width: 60%;
 }
 @media (max-width: 770px) {
+  .Header-Images{
+    height: 45px !important;
+  }
   #Home{
     height: 360px !important;
     padding-top: 10px !important;
@@ -1225,7 +1279,7 @@ pre code {
     line-height: 16px;
   }
   .col-lg-62{
-    padding-left: 20px;
+    padding-left: 10px;
   }
   #ButtonL{
     font-size: 10px;
@@ -2421,15 +2475,7 @@ textarea.form-control {
   }
 }
 
-.btn:hover {
-  color: #686A6F;
-  text-decoration: none;
-}
 
-.btn:focus, .btn.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(255, 170, 23, 0.25);
-}
 
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -4235,7 +4281,9 @@ input[type="button"].btn-block {
   flex-grow: 1;
   align-items: center;
 }
-
+.Header-Images{
+  height: 50px;
+}
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -9816,11 +9864,28 @@ h6,
 .back-to-top {
   position: fixed;
   display: none;
-  right: 30px;
-  bottom: 30px;
+  right: 18px;
+  bottom: 80px;
   z-index: 99;
 }
 
+.WhatsApp{
+  color: white !important;
+  border: none !important;
+  text-decoration: none !important;
+  background-color: #25D366;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99;
+}
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
