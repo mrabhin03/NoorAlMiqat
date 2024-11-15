@@ -121,3 +121,26 @@ function menudata(object){
     }
 }
 
+// Define the objects array with elements
+const objects = [];
+objects[0] = document.getElementById('About');
+objects[1] = document.getElementById('Services');
+objects[2] = document.getElementById('Location');
+
+// Create an Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('Show');
+        }
+    });
+});
+
+// Observe each element in the objects array
+objects.forEach(element => {
+    if (element) {
+        observer.observe(element);
+    }
+});
+
+

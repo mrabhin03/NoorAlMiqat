@@ -72,12 +72,12 @@
         </div>
     </div>
 
-    <div id="About"  class="container-fluid py-5">
+    <div id="About"  class="container-fluid py-5 About">
         
         <div class="container py-5">
             <h1 class="aboutTitle" style="color: #26225c; font-weight: 0;">About Us</h1>
             <div class="aboutSub">
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="width:110%; margin-left:15px">
                     <div  class="owl-carousel AboutUSImage position-relative" style="padding-left: 0px;">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative">
@@ -97,7 +97,20 @@
                     <h5 class="text-uppercase mb-3" style="color: black;">Premier Maintenance Solutions for Homes and Businesses in UAE</h5>
                     <p class="mb-4">Welcome to <b>Noor Al Miqat</b>, 
                         the leading maintenance agency in UAE, where quality meets reliability. We specialize in providing comprehensive maintenance services designed to meet the unique needs of both residential and commercial spaces. Our mission is to ensure your environments are not only functional 
-                        but also enhance the overall experience of your space.</p>
+                        but also enhance the overall experience of your space.
+                    </p>
+                    <h5 class="text-uppercase mb-3" style="color: black;">Our Mission</h5>
+                    <p class="mb-4">
+                        To deliver <b>exceptional technical support and innovative solutions</b> that empower
+                        our clients to achieve their goals <b>efficiently and effectively</b>, 
+                        while maintaining the highest standards of professionalism and integrity
+                    </p>
+                    <h5 class="text-uppercase mb-3" style="color: black;">Our Vision </h5>
+                    <p class="mb-4">
+                        To be the leading provider of <b>innovative and comprehensive technical services</b>, 
+                        setting the industry standard for excellence and reliability, 
+                        while continuously evolving to meet the changing needs of our clients.
+                    </p>
                     <a href="Assets/Noor Al Miqat.pdf" download="Noor Al Miqat.pdf" class="btn btn-dark text-uppercase py-3 px-5">Read More</a>
                 </div>
             </div>
@@ -106,7 +119,7 @@
 
     
 
-    <div id="Services" style="background: linear-gradient(to bottom, #26225c 50%, white 50%);" class="container-fluid py-5">
+    <div id="Services" style="background: linear-gradient(to bottom, #26225c 50%, white 50%);" class="container-fluid py-5 Services">
         <div class="container py-5">
             <h1 class="display-4 text-uppercase text-center" style="color: white; margin-bottom: 100px;">Our Services</h1>
             <div  class="owl-carousel team-carousel position-relative" style="padding-left: 0px;">
@@ -236,7 +249,7 @@
 
    
     
-    <div id="Contact" class="container-fluid py-5 px-0" >
+    <div id="Location" class="container-fluid px-0 Location" >
         <div class="row mt-5 mx-0">
             <div class="col-12 px-0" style="height: 500px;">
                 <div class="position-relative h-100">
@@ -247,7 +260,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mx-0 justify-content-center" style="margin-top: -200px;">
+        <!-- <div class="row mx-0 justify-content-center" style="margin-top: -200px;">
             <div class="col-lg-6 col-md-8 col-sm-10 px-0" >
                 <div class="contact-form rounded p-5" style="background-color: #f4f4f4;">
                     <div id="success"></div>
@@ -280,7 +293,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     
 
@@ -302,20 +315,20 @@
                     <a class="btn btn-lg btn-primary btn-lg-square" target="_blank" href="https://www.instagram.com/nooralmiqat/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
+            <div class="col-lg-3 col-md-6 mb-5" id="Contact">
                 <h4 class="text-uppercase text-white mb-4">Get In Touch</h4>
                 <!-- <p>You can contact us on </p> -->
                 <p><i class="fa fa-map-marker-alt text-white mr-2"></i>
-                    United Arab Emirates <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    UAE, Ajman 
+                    <a href="https://maps.app.goo.gl/qLRqJCFLGtKxcAND6" target="_blank">United Arab Emirates <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    UAE, Ajman </a>
                 </p>
                 <p><i class="fa fa-phone-alt text-white mr-2"></i>
-                    +971 50 376 9648<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    +971 54 345 0744
+                    <a href="tel:+971 50 376 9648" target="_blank">+971 50 376 9648</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="tel:+971 54 345 0744" target="_blank">+971 54 345 0744</a>
                 </p>
                 <p><i class="fa fa-envelope text-white mr-2"></i>
-                    Info@nooralmiqat.ae <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    Sales@nooralmiqat.ae 
+                    <a href="" >Info@nooralmiqat.ae</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" >Sales@nooralmiqat.ae </a>
                 </p>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -347,6 +360,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
     
     <script src="mail/jqBootstrapValidation.min.js"></script>

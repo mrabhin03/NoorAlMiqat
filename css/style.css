@@ -167,11 +167,42 @@ sub {
 sup {
   top: -.5em;
 }
-
+@keyframes Appear {
+  from{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#Location,#About{
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 1s ease-in-out;
+}
+#Services{
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.Location.Show,.About.Show{
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+}
+.Services.Show{
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
 a {
   color: #FFAA17;
   text-decoration: none;
   background-color: transparent;
+}
+#Contact a{
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 a:hover {
