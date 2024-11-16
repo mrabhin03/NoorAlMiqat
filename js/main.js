@@ -134,6 +134,11 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('Show');
         }
+        else{
+            if(entry.target!=document.getElementById('Location')){
+            entry.target.classList.remove('Show');
+            }
+        }
     });
 });
 

@@ -189,10 +189,16 @@ sup {
   opacity: 1 !important;
   transform: translateY(0px) !important;
 }
-/* .Services.Show{
-  transform: translateY(0px) !important;
-  opacity: 1 !important;
-} */
+.Services.Show .ServicesTitle{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: .4s;
+}
+.Services.Show .ServicesSubs{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: .5s;
+}
 a {
   /* color: #FFAA17; */
   text-decoration: none;
