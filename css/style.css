@@ -204,6 +204,51 @@ a {
   text-decoration: none !important;
   color: rgba(255, 255, 255, 0.5) !important;
 }
+.About.Show .MainAboutTitle{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: .5s;
+}
+.About.Show .MainAboutTitleSub1{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: .6s;
+}
+.About.Show .MainAboutSub1{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: .7s;
+}
+
+.About.Show .MainAboutTitleSub2{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: .8s;
+}
+.About.Show .MainAboutSub2{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: .9s;
+}
+
+.About.Show .MainAboutTitleSub3{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.About.Show .MainAboutSub3{
+  opacity: 0;
+  animation: loadText .4s ease-in-out forwards;
+  animation-delay: 1.1s;
+}
+@keyframes loadText {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 
 a:hover {
   /* color: #ca8000; */
@@ -957,6 +1002,63 @@ pre code {
 
 .offset-11 {
   margin-left: 91.66667%;
+}
+
+#TILTEDATA{
+  animation: load .5s ease-out forwards;
+
+}
+#SUBDATA{
+  transform: translateX(-300px);
+  animation: load .5s ease-out forwards;
+  animation-delay: .3s;
+  opacity: 0;
+}
+#ButtonL{
+  transform: translateY(200px);
+  animation: load2 .5s ease-in-out forwards;
+  animation-delay: .3s;
+  opacity: 0;
+  box-shadow: 0px 0px 20px black;
+}
+
+@keyframes load2 {
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+}
+@keyframes load {
+  from{
+    transform: translateX(-200px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+
+.owl-item.active{
+  animation: HoverImage 5s ease-in-out infinite;
+}
+.owl-item.active:nth-child(even){
+  animation-delay: .25s;
+}
+@keyframes HoverImage {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+      transform: scale(.95);
+  }
 }
 
 @media (min-width: 576px) {
@@ -9916,6 +10018,28 @@ h6,
   right: 15px;
   bottom: 15px;
   z-index: 99;
+  animation: rings 10s ease-in-out infinite;
+  animation-delay: 10s;
+}
+@keyframes rings {
+  0%{
+    transform: rotate(0deg);
+  }
+  2%{
+    transform: rotate(20deg);
+  }
+  6%{
+    transform: rotate(-20deg);
+  }
+  10%{
+    transform: rotate(20deg);
+  }
+  14%{
+    transform: rotate(-20deg);
+  }
+  16%{
+    transform: rotate(0deg);
+  }
 }
 .navbar-light .navbar-nav .nav-link {
   font-family: 'Oswald', sans-serif;
