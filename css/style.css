@@ -1017,7 +1017,6 @@ pre code {
   animation: load2 .5s ease-in-out forwards;
   animation-delay: .3s;
   opacity: 0;
-  box-shadow: 0px 0px 20px black;
 }
 
 @keyframes load2 {
@@ -1416,6 +1415,9 @@ pre code {
     font-size: 10px;
     margin-left: 0px !important;
   }
+}
+#ReadMore{
+  padding: 8px 20px;
 }
 /* From Uiverse.io by JulanDeAlb */ 
 .hamburger {
@@ -10018,6 +10020,7 @@ h6,
   z-index: 99;
   animation: rings 10s ease-in-out infinite;
   animation-delay: 10s;
+  transform-origin: top center;
 }
 @keyframes rings {
   0%{
@@ -10189,7 +10192,9 @@ h6,
   background-size: cover;
   transform: scaleX(-1);
   height: 600px;
-  /* padding-top: 30px !important; */
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 
