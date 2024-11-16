@@ -196,7 +196,7 @@ sup {
   opacity: 1 !important;
 }
 a {
-  color: #FFAA17;
+  /* color: #FFAA17; */
   text-decoration: none;
   background-color: transparent;
 }
@@ -206,8 +206,8 @@ a {
 }
 
 a:hover {
-  color: #ca8000;
-  text-decoration: underline;
+  /* color: #ca8000; */
+  /* text-decoration: underline; */
 }
 
 a:not([href]):not([class]) {
