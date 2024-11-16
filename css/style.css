@@ -4258,7 +4258,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 .navbar .container,
@@ -10006,7 +10006,7 @@ h6,
   position: absolute;
   width: 100%;
   height: fit-content;
-  top: -100px;
+  top: -80px;
   left: 0px;
   display: flex;
   z-index: 1;
@@ -10027,7 +10027,7 @@ h6,
   color: white;
   /* background-color: white; */
   border-radius: 4px;
-  font-size: 50px;
+  font-size: 30px;
   transition: .5s;
 }
 

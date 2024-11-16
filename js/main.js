@@ -126,6 +126,7 @@ const objects = [];
 objects[0] = document.getElementById('About');
 objects[1] = document.getElementById('Services');
 objects[2] = document.getElementById('Location');
+objects[3] = document.querySelectorAll('.MainHome')[0];
 
 // Create an Intersection Observer
 const observer = new IntersectionObserver((entries) => {
@@ -142,5 +143,15 @@ objects.forEach(element => {
         observer.observe(element);
     }
 });
+
+
+function CloseMenu(){
+    menu=document.getElementById("navbarCollapse");
+    icon=document.getElementById("menuIcon");
+    if(menu.classList.contains('show')){
+        menu.classList.remove('show');
+        icon.checked=false;
+    }
+}
 
 
