@@ -179,7 +179,7 @@ sup {
 }
 #Location,#About{
   opacity: 0;
-  transform: translateY(200px);
+  transform: translateY(0px);
   transition: all 1s ease-in-out;
 }
 #Services{
@@ -192,12 +192,12 @@ sup {
 .Services.Show .ServicesTitle{
   opacity: 0;
   animation: loadText .4s ease-in-out forwards;
-  animation-delay: .4s;
+  animation-delay: .2s;
 }
 .Services.Show .ServicesSubs{
   opacity: 0;
   animation: loadText .4s ease-in-out forwards;
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 a {
   /* color: #FFAA17; */
